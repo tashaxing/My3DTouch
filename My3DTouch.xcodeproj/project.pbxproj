@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E44B78FB1DC1E8ED0098F1F4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B78FA1DC1E8ED0098F1F4 /* DetailViewController.m */; };
+		E44B78FE1DC1EA3E0098F1F4 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B78FD1DC1EA3E0098F1F4 /* WebViewController.m */; };
 		E4CB6D111DC0857B00D28734 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CB6D101DC0857B00D28734 /* main.m */; };
 		E4CB6D141DC0857B00D28734 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CB6D131DC0857B00D28734 /* AppDelegate.m */; };
 		E4CB6D171DC0857B00D28734 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CB6D161DC0857B00D28734 /* ViewController.m */; };
 		E4CB6D1A1DC0857C00D28734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CB6D181DC0857C00D28734 /* Main.storyboard */; };
 		E4CB6D1C1DC0857C00D28734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CB6D1B1DC0857C00D28734 /* Assets.xcassets */; };
 		E4CB6D1F1DC0857C00D28734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CB6D1D1DC0857C00D28734 /* LaunchScreen.storyboard */; };
+		E4CB6D271DC08E1700D28734 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CB6D261DC08E1700D28734 /* icon2.png */; };
+		E4CB6D291DC08E2B00D28734 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CB6D281DC08E2B00D28734 /* icon1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E44B78F91DC1E8ED0098F1F4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E44B78FA1DC1E8ED0098F1F4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E44B78FC1DC1EA3E0098F1F4 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		E44B78FD1DC1EA3E0098F1F4 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		E4CB6D0C1DC0857B00D28734 /* My3DTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My3DTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CB6D101DC0857B00D28734 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4CB6D121DC0857B00D28734 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 		E4CB6D1B1DC0857C00D28734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4CB6D1E1DC0857C00D28734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4CB6D201DC0857C00D28734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4CB6D261DC08E1700D28734 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = ../../../Wallet_UI_92/wl_ios/wallet/wallet/Tabs/LifeStyle/assets/icon2.png; sourceTree = "<group>"; };
+		E4CB6D281DC08E2B00D28734 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon1.png; path = ../../../Wallet_UI_92/wl_ios/wallet/wallet/Tabs/LifeStyle/assets/icon1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,10 @@
 				E4CB6D1D1DC0857C00D28734 /* LaunchScreen.storyboard */,
 				E4CB6D201DC0857C00D28734 /* Info.plist */,
 				E4CB6D0F1DC0857B00D28734 /* Supporting Files */,
+				E44B78F91DC1E8ED0098F1F4 /* DetailViewController.h */,
+				E44B78FA1DC1E8ED0098F1F4 /* DetailViewController.m */,
+				E44B78FC1DC1EA3E0098F1F4 /* WebViewController.h */,
+				E44B78FD1DC1EA3E0098F1F4 /* WebViewController.m */,
 			);
 			path = My3DTouch;
 			sourceTree = "<group>";
@@ -74,6 +88,8 @@
 		E4CB6D0F1DC0857B00D28734 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4CB6D281DC08E2B00D28734 /* icon1.png */,
+				E4CB6D261DC08E1700D28734 /* icon2.png */,
 				E4CB6D101DC0857B00D28734 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,8 +154,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CB6D291DC08E2B00D28734 /* icon1.png in Resources */,
 				E4CB6D1F1DC0857C00D28734 /* LaunchScreen.storyboard in Resources */,
 				E4CB6D1C1DC0857C00D28734 /* Assets.xcassets in Resources */,
+				E4CB6D271DC08E1700D28734 /* icon2.png in Resources */,
 				E4CB6D1A1DC0857C00D28734 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,8 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4CB6D171DC0857B00D28734 /* ViewController.m in Sources */,
+				E44B78FE1DC1EA3E0098F1F4 /* WebViewController.m in Sources */,
 				E4CB6D141DC0857B00D28734 /* AppDelegate.m in Sources */,
 				E4CB6D111DC0857B00D28734 /* main.m in Sources */,
+				E44B78FB1DC1E8ED0098F1F4 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GV7V6SW596;
 				INFOPLIST_FILE = My3DTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tashaxing.My3DTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GV7V6SW596;
 				INFOPLIST_FILE = My3DTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tashaxing.My3DTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +334,7 @@
 				E4CB6D251DC0857C00D28734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

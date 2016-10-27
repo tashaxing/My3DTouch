@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DetailViewController.h"
+#import "WebViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,10 +17,63 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+    
+    // 其实可以在这里给app动态加入快捷菜单，不过需要程序启动之后才出现，推荐静态标签
+//    //系统ShortcutIcon
+//    UIApplicationShortcutIcon *favrite = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeFavorite];
+//    
+//    UIApplicationShortcutItem *itemOne = [[UIApplicationShortcutItem alloc] initWithType:@"favrite" localizedTitle:@"时尚之都" localizedSubtitle:nil icon:favrite userInfo:nil];
+//    
+//    UIApplicationShortcutIcon *bookMark = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeBookmark];
+//    
+//    UIApplicationShortcutItem *itemTwo = [[UIApplicationShortcutItem alloc] initWithType:@"book" localizedTitle:@"知识海洋" localizedSubtitle:nil icon:bookMark userInfo:nil];
+//    
+//    //自定义ShortcutIcon
+//    UIApplicationShortcutIcon *iconContact = [UIApplicationShortcutIcon iconWithTemplateImageName:@"contact"];
+//    
+//    UIApplicationShortcutItem *itemThree = [[UIApplicationShortcutItem alloc] initWithType:@"contact" localizedTitle:@"联系的人" localizedSubtitle:nil icon:iconContact userInfo:nil];
+//    
+//    [UIApplication sharedApplication].shortcutItems = @[itemOne,itemTwo,itemThree];
+    
     return YES;
 }
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler
+{
+    // 获取全局导航器
+    UINavigationController *nav = (UINavigationController *)self.window.rootViewController;
+    
+    // 根据3dtouch快捷键的type来进入不同入口
+    NSString *shortCutType = shortcutItem.type;
+    if ([shortCutType isEqualToString:@"type1"])
+    {
+        NSLog(@"%@--%@", shortcutItem.localizedTitle, shortcutItem.localizedSubtitle);
+        // 根据type进入页面
+        WebViewController *webVC = [[WebViewController alloc] init];
+        [nav pushViewController:webVC animated:YES];
+    }
+    else if ([shortCutType isEqualToString:@"type2"])
+    {
+        NSLog(@"%@--%@", shortcutItem.localizedTitle, shortcutItem.localizedSubtitle);
+        // 根据type进入页面
+        DetailViewController *detailVC = [[DetailViewController alloc] init];
+        [nav pushViewController:detailVC animated:YES];
+    }
+    else if ([shortCutType isEqualToString:@"type3"])
+    {
+        NSLog(@"%@--%@", shortcutItem.localizedTitle, shortcutItem.localizedSubtitle);
+        // 没有push的话就默认进入主页面
+    }
+    else if ([shortCutType isEqualToString:@"type4"])
+    {
+        NSLog(@"%@--%@", shortcutItem.localizedTitle, shortcutItem.localizedSubtitle);
+        // 没有push的话就默认进入主页面
+    }
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

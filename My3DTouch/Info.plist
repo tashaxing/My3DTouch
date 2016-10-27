@@ -2,6 +2,63 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>UIApplicationShortcutItems</key>
+    <array>
+        <dict>
+            <key>UIApplicationShortcutItemIconType</key>
+            <string>UIApplicationShortcutIconTypeSearch</string>
+            <key>UIApplicationShortcutItemSubtitle</key>
+            <string>search friends</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>Search</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>type1</string>
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict/>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemIconType</key>
+            <string>UIApplicationShortcutIconTypeAdd</string>
+            <key>UIApplicationShortcutItemSubtitle</key>
+            <string>add someone</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>Add</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>type2</string>
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict/>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>icon1.png</string>
+            <key>UIApplicationShortcutItemSubtitle</key>
+            <string>很有意思</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>新特性</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>type3</string>
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict>
+                <key>dest</key>
+                <string>https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/Adopting3DTouchOniPhone/index.html#//apple_ref/doc/uid/TP40016543-CH1-SW1</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>icon2.png</string>
+            <key>UIApplicationShortcutItemSubtitle</key>
+            <string>Very interesting</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>New feature</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>type4</string>
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict>
+                <key>dest</key>
+                <string>main page</string>
+            </dict>
+        </dict>
+    </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
